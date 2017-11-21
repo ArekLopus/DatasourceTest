@@ -24,7 +24,8 @@ public class TestDataSource2 implements Serializable {
 	@Inject
 	transient Logger logger;
 	
-	@PersistenceContext
+	@PersistenceContext(unitName="testPU")
+	//@PersistenceContext
     private EntityManager em;
 	
 	@Transactional(value=Transactional.TxType.REQUIRES_NEW)

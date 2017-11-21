@@ -9,7 +9,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 
-@Named("testDataSource")
+//@Named("testDataSource")
 @SessionScoped
 @SuppressWarnings("unused")
 public class TestDataSource3 implements Serializable {

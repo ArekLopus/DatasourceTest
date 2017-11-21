@@ -19,7 +19,7 @@ import javax.transaction.SystemException;
 import javax.transaction.UserTransaction;
 
 
-//@Named
+@Named
 @SessionScoped
 @SuppressWarnings("unused")
 public class TestDataSource implements Serializable {
@@ -36,8 +36,8 @@ public class TestDataSource implements Serializable {
 	@Resource
 	UserTransaction ut;
 	
-	//@PersistenceContext(unitName="testPU")
-	@PersistenceContext
+	@PersistenceContext(unitName="testPU")
+	//@PersistenceContext
     private EntityManager em;
 
     public void saveNewEntity() throws NotSupportedException, SystemException, SecurityException, IllegalStateException, RollbackException, HeuristicMixedException, HeuristicRollbackException {

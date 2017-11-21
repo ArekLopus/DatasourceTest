@@ -18,8 +18,8 @@ public class TestDataSource3PersitenceEJB{
 	@Inject
 	Logger logger;
 	
-	//@PersistenceContext(unitName="testPU")
-	@PersistenceContext
+	@PersistenceContext(unitName="testPU")
+	//@PersistenceContext
 	EntityManager em;
 	
     public void saveNewEntity() {
