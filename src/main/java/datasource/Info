@@ -1,3 +1,11 @@
 -Copy H2Database jar to         glassfish-4.1/glassfish/domains/domain1/lib/ext/h2.jar
 
-Działa z IDE, nie działa standalone
+-Works with IDE, not working standalone
+
+
+-By default Eclipse puts META-INF/persistence.xml in src/main/java
+-Move META-INF/persistence.xml from 
+	src/main/java
+to
+	src/main/resources
+After mvn clean package it ends up in 	your.war\WEB-INF\classes\META-INF\persistence.xml
